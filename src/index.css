@@ -110,7 +110,7 @@ h1,
 .h1 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: "Rubik", "Times New Roman", serif;
+  font-family: var(--bs-body-font-family);
   font-weight: 500;
   line-height: 1.1;
   color: #d8deea;
@@ -622,8 +622,8 @@ progress {
 .img-thumbnail {
   padding: 0;
   background-color: transparent;
-  border: 0px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 1rem;
   max-width: 100%;
   height: auto;
 }
@@ -4352,7 +4352,7 @@ fieldset:disabled .btn {
 .list-group {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
+  padding: 10px;
   margin-bottom: 0;
   border-radius: 0.3125rem;
 }
@@ -12362,6 +12362,7 @@ button.list-group-item-gray.active {
 }
 .card-search{
   padding: 3rem;
+  margin-bottom: 2rem;
 }
 .card-search h1{
   text-align: center;
@@ -27879,4 +27880,7 @@ html:not(.layout-menu-collapsed) .bg-menu-theme.menu-horizontal .menu-inner > .m
 }
 .bg-footer-theme hr {
   border-color: rgba(216, 222, 234, 0.06);
+}
+.search-resoult-link{
+  z-index: 2;
 }
